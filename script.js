@@ -1,22 +1,22 @@
 function createTable() {
     //Write your code here
-	var rowCount = prompt("Input number of rows");
+	let rowCount = prompt("Input number of rows");
 
-	var colCount = prompt("Input number of columns");
+	let colCount = prompt("Input number of columns");
 
-	var table = document.getElementById('myTable');
+	let table = document.getElementById('myTable');
 
 	table.innerHTML = "";
 
-	for(var i = 0; i<rowCount; i++)
+	for(let i = 0; i<rowCount; i++)
 		{
-			var row = table.insertRow(i);
+			let row = table.insertRow(i);
 
-			for(var j=0; j<colCount; j++)
+			for(let j=0; j<colCount; j++)
 				{
-					var cells = row.insertCell(j);
+					let cells = row.insertCell(j);
 
-					cell.textContent = "Row-"+ i + " Column-" + j;
+					cells.textContent = "Row-"+ i + " Column-" + j;
 				}
 		}
   
